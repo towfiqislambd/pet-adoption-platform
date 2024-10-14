@@ -18,4 +18,4 @@ This is Pet Adoption Platform where anyone can buy or sell pets. At the same tim
     <li>Template Strings</li>
     <li>Optional Chaining</li>
 </ul>
-<b>5. Live link to the deployed project :</b> https://pappy.netlify.app](https://pet-adoption-platform.netlify.app
+<b>5. Live link to the deployed project :</b> https://pet-adoption-platform.netlify.app
