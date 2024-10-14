@@ -1,4 +1,3 @@
-=======
 <b>1. Project name :</b> Pet Adoption Platform <br> <br>
 <b>2. Short description of the project :</b>
 This is Pet Adoption Platform where anyone can buy or sell pets. At the same time if anyone want to exchange, it can possible. When click on youtube icon, they can visit our official youtube cannel. If anyone wants to connect with us, please subscribe. Thank You! <br><br>
