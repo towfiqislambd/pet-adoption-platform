@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 =======
 <b>1. Project name :</b> Pet Adoption Platform <br> <br>
 <b>2. Short description of the project :</b>
@@ -21,4 +20,3 @@ This is Pet Adoption Platform where anyone can buy or sell pets. At the same tim
     <li>Optional Chaining</li>
 </ul>
 <b>5. Live link to the deployed project :</b> https://pappy.netlify.app
->>>>>>> 2c82e5cdc6f20a724e6b43cf89f6d0f1bc20a5d8
