@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet-Adoption-Platform</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <!-- TailwindCSS + DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom Script Code -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0E7A81',
+                    },
+                    fontFamily: {
+                        inter: "Inter",
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-inter">
+
+    <header class="w-11/12 mx-auto">
+        <!-- Nav Part -->
+        <nav class="py-1">
+            <div class="navbar">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 font-semibold space-y-2">
+                            <li><a>Home</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <a class="flex gap-2 font-extrabold items-center text-black" href="#">
+                        <img src="images/logo.webp" class="w-5">
+                        <span class="text-lg">Peddy</span>
+                    </a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 font-semibold">
+                        <li><a>Home</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a href="#" class="border rounded-full w-10 h-10 grid place-items-center text-lg"><i
+                            class="fa-regular fa-user"></i></a>
+                </div>
+            </div>
+        </nav>
+        <!-- Hero Part -->
+        <div class="text-center pt-5 pb-10 space-y-6">
+            <h5 class="text-gray-600 font-semibold">Bringing Families Together ❤️‍🔥</h5>
+            <h1 class="font-semibold text-3xl sm:text-4xl md:text-5xl leading-[2.5rem] md:leading-[3.50rem]">Your Path
+                to Adoption <br> Starts Here</h1>
+            <p class="text-gray-500 md:w-3/5 mx-auto">It is a long established fact that a reader will be distracted by
+                the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has
+                a.</p>
+            <a class="btn bg-primary hover:bg-primary text-white font-semibold min-h-0 h-11" href="#products">View
+                More</a>
+            <img src="images/pet.webp" class="mx-auto w-[470px]">
+        </div>
+    </header>
+
+
+    <main class="w-11/12 mx-auto">
+        <!-- Product Section -->
+        <section id="products">
+            <h2 class="font-semibold text-3xl text-center pb-4">Adopt Your Best Friend</h2>
+            <p class="text-gray-500 md:w-3/5 mx-auto text-center pb-8">It is a long established fact that a reader will
+                be distracted by the readable content of a page when looking at its layout. The point of using Lorem
+                Ipsum is that it has a.
+            </p>
+            <div class="flex gap-2 justify-center lg:justify-between pb-10 flex-wrap" id="categories-btn">
+
+                <!-- Here Will Add Buttons Dynamically -->
+
+            </div>
+            <div class="flex justify-between items-center pb-10">
+                <p class="font-bold text-lg">Best Deal For you</p>
+                <button onclick="sortByPriceDescending()"
+                    class="btn bg-primary hover:bg-primary text-white font-semibold min-h-0 h-10">Sort By Price
+                </button>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 pb-10">
+                <div class="md:col-span-2 lg:col-span-3 grid grid-cols-1 md:grid-cols-3 gap-5" id="card-container">
+
+                    <!-- Here Will Add Posts Dynamically -->
+
+                    <!-- loading Spinner -->
+                    <div class="hidden text-center justify-center items-center" id="loading-spinner">
+                        <span class="loading loading-bars loading-lg py-24 mx-auto"></span>
+                    </div>
+
+                </div>
+                <div class="p-4 border rounded-lg grid grid-cols-2 gap-4  content-start" id="card-image">
+
+                    <!-- Here Will Add Post Images Dynamically -->
+
+                </div>
+            </div>
+        </section>
+        <!-- Modal For Details Button -->
+        <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+            <div class="modal-box" id="modal-box">
+
+                <!-- Here Will Show the Modal Dynamically -->
+
+            </div>
+        </dialog>
+
+        <!-- Modal For Adopts Button -->
+        <dialog id="my_modal_2" class="modal">
+
+            <!-- Here Will Show the Modal Dynamically -->
+
+        </dialog>
+    </main>
+
+
+    <footer class="footer bg-[#121212] text-gray-400 p-10 pt-16">
+        <nav>
+            <h6 class="footer-title capitalize font-medium">
+                <a class="flex gap-2 font-extrabold items-center text-black" href="#">
+                    <img src="images/logo.webp" class="w-5">
+                    <span class="text-lg text-white">Peddy</span>
+                </a>
+            </h6>
+            <a class="text-gray-400 text-sm">Location: av. Washington 165, NY CA 54003</a>
+            <a class="text-gray-400 text-sm">Phone: +31 85 964 47 25</a>
+            <a class="text-gray-400 text-sm">Email: info@yourdomain.com</a>
+            <a class="text-gray-400 text-sm"> Openings hours: 9.00 AM - 5.00 PM</a>
+            <div class="flex gap-3 mt-3">
+                <img src="https://img.icons8.com/?size=100&id=118497&format=png&color=000000" class="w-8">
+                <img src="https://img.icons8.com/?size=100&id=phOKFKYpe00C&format=png&color=000000" class="w-8">
+                <img src="https://img.icons8.com/?size=100&id=9a46bTk3awwI&format=png&color=000000" class="w-8">
+                <img src="https://img.icons8.com/?size=100&id=Xy10Jcu1L2Su&format=png&color=000000" class="w-8">
+            </div>
+        </nav>
+        <nav>
+            <h6 class="footer-title">Useful Links</h6>
+            <a class="link link-hover">Home</a>
+            <a class="link link-hover">About us</a>
+            <a class="link link-hover">Animals</a>
+            <a class="link link-hover">Foundation</a>
+            <a class="link link-hover">Contact Us</a>
+        </nav>
+        <form>
+            <h6 class="footer-title">Drop Your Message</h6>
+            <input type="email" placeholder="Enter Your Email" class="input input-bordered bg-[#444]">
+            <button class="btn bg-primary border-none text-white join-item w-full">Subscribe</button>
+        </form>
+    </footer>
+
+    <!-- Custom Script File -->
+    <script src="main.js"></script>
+</body>
+</html>
